@@ -30,7 +30,6 @@ const ParticleBackground = () => {
       color: string;
     }> = [];
 
-    const colors = ['#00FFC6', '#006B3C', '#FFD700', '#0D1B2A'];
     const colors = ['#FAD707', '#D0A51D', '#734A27', '#1F2E6C'];
 
     // Create particles

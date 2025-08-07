@@ -93,6 +93,82 @@ html {
   transform: translateX(-100%);
 }
 
+/* Hero Slider Custom Transitions */
+.rotateY-0 {
+  transform: rotateY(0deg);
+}
+
+.rotateY-90 {
+  transform: rotateY(90deg);
+}
+
+/* 3D Transform Support */
+.transform-gpu {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+/* Slider Performance Optimizations */
+.slider-slide {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}
+
+/* Custom Slide Animations */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes flipIn {
+  from {
+    transform: rotateY(-90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes parallaxIn {
+  from {
+    transform: translateY(50px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
 /* Enhanced focus states */
 button:focus-visible,
 input:focus-visible,
