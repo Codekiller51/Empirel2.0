@@ -35,10 +35,10 @@ const About = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
           }`}
         >
-          <h2 className="font-orbitron text-5xl md:text-6xl font-bold mb-8 text-white">
-            About <span className="text-teal-400">Empirel</span>
+          <h2 className="font-playfair text-5xl md:text-6xl font-bold mb-8 text-neutral-50">
+            About <span className="text-accent-500">Empirel</span>
           </h2>
-          <p className="font-inter text-xl md:text-2xl text-white/80 max-w-4xl mx-auto leading-relaxed">
+          <p className="font-poppins text-xl md:text-2xl text-neutral-200 max-w-4xl mx-auto leading-relaxed">
             Empirel is the bridge between African creativity and the future of innovation. 
             We combine cutting-edge technology, strategic marketing, and professional media production 
             to elevate brands and empower the next generation.
@@ -61,10 +61,10 @@ const About = () => {
                   <div className={`w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br ${dept.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                     <dept.icon className="w-10 h-10 text-white" />
                   </div>
-                  <h3 className="font-orbitron text-2xl font-bold text-white mb-4">
+                  <h3 className="font-playfair text-2xl font-bold text-neutral-50 mb-4">
                     Empirel {dept.name}
                   </h3>
-                  <p className="font-inter text-white/70 leading-relaxed">
+                  <p className="font-inter text-neutral-300 leading-relaxed">
                     {dept.name === 'Technology' && "Building tomorrow's digital solutions with AI, cloud computing, and innovative web applications."}
                     {dept.name === 'Marketing' && "Crafting compelling narratives and data-driven strategies that connect brands with their audience."}
                     {dept.name === 'Studio' && "Creating stunning visual content through professional video production, photography, and sound design."}
@@ -72,10 +72,10 @@ const About = () => {
                 </div>
                 
                 {/* Glassmorphism overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-neutral-50/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
                 {/* Animated border */}
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-teal-400/20 via-transparent to-green-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-accent-500/20 via-transparent to-secondary-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
           ))}

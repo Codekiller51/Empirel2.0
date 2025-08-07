@@ -31,6 +31,7 @@ const ParticleBackground = () => {
     }> = [];
 
     const colors = ['#00FFC6', '#006B3C', '#FFD700', '#0D1B2A'];
+    const colors = ['#FAD707', '#D0A51D', '#734A27', '#1F2E6C'];
 
     // Create particles
     for (let i = 0; i < 50; i++) {
@@ -75,7 +76,7 @@ const ParticleBackground = () => {
       });
 
       // Draw connections
-      ctx.strokeStyle = 'rgba(0, 255, 198, 0.1)';
+      ctx.strokeStyle = 'rgba(250, 215, 7, 0.1)';
       ctx.lineWidth = 1;
       
       for (let i = 0; i < particles.length; i++) {

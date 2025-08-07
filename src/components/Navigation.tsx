@@ -49,7 +49,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <h1 
               onClick={() => scrollToSection('hero')}
-              className="font-orbitron text-2xl font-bold text-teal-400 cursor-pointer hover:text-gold-400 transition-colors duration-300"
+              className="font-playfair text-2xl font-bold text-accent-500 cursor-pointer hover:text-accent-400 transition-colors duration-300"
             >
               EMPIREL
             </h1>
@@ -64,8 +64,8 @@ const Navigation = () => {
                   onClick={() => scrollToSection(item.id)}
                   className={`px-3 py-2 text-sm font-medium transition-all duration-300 ${
                     activeSection === item.id
-                      ? 'text-teal-400 border-b-2 border-teal-400'
-                      : 'text-white hover:text-teal-400'
+                      ? 'text-accent-500 border-b-2 border-accent-500'
+                      : 'text-neutral-50 hover:text-accent-400'
                   }`}
                 >
                   {item.label}
@@ -78,7 +78,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-teal-400 transition-colors"
+              className="text-neutral-50 hover:text-accent-400 transition-colors"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -88,7 +88,7 @@ const Navigation = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-slate-900/95 backdrop-blur-lg">
+        <div className="md:hidden bg-primary-900/95 backdrop-blur-lg">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
               <button
@@ -96,8 +96,8 @@ const Navigation = () => {
                 onClick={() => scrollToSection(item.id)}
                 className={`block w-full text-left px-3 py-2 text-base font-medium transition-colors ${
                   activeSection === item.id
-                    ? 'text-teal-400'
-                    : 'text-white hover:text-teal-400'
+                    ? 'text-accent-500'
+                    : 'text-neutral-50 hover:text-accent-400'
                 }`}
               >
                 {item.label}

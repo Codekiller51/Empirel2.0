@@ -9,7 +9,7 @@ import ParticleBackground from './components/ParticleBackground';
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-slate-900 text-white overflow-hidden">
+    <div className="relative min-h-screen bg-primary-900 text-neutral-50 overflow-hidden">
       <ParticleBackground />
       <Navigation />
       <Hero />
